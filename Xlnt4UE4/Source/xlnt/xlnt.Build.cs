@@ -11,7 +11,7 @@ public class xlnt : ModuleRules
     {
         get
         {
-            return Path.GetFullPath(Path.Combine(PluginDirectory, "ThirdParty/xlnt/installed"));
+            return Path.GetFullPath(Path.Combine(PluginDirectory, "ThirdParty/xlnt/"));
         }
     }
 
@@ -41,7 +41,7 @@ public class xlnt : ModuleRules
             }
             else
             {
-                libs = new string[] { LibDir + "/xlnt.lib" };
+                libs = new string[] { LibDir + "/xlntd.lib" };
             }
 
             foreach (string lib in libs)
